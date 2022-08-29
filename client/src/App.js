@@ -7,7 +7,7 @@ import Navbar from './components/Navbar'
 import Gallery from './components/Gallery'
 
 function App() {
-    const sectionTitles = ["home", "experience", "projects", "contact", "gallery"]
+    const sectionTitles = ["home", "about", "experience", "projects", "contact", "gallery"]
     return (
         <Router>
             <Navbar texts={sectionTitles}/>
