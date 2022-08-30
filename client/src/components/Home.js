@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from './Navbar'
 import AboutSection from './AboutSection'
 import ExperienceSection from './ExperienceSection'
 import ProjectSection from './ProjectSection'
@@ -6,15 +7,15 @@ import ContactSection from './ContactSection'
 
 const Home = () => {
     const aboutTexts = [
-        "Hello! My name is Angel Zhang, and I am a 3rd year Computer Science student at the University of Waterloo. I had completed internships as a Software Engineer at Huawei and as an IT support specialist at Tangam Systems. I am currently seeking Fall 2023 opportunities.",
+        // "Hello! My name is Angel Zhang, and I am a 3rd year Computer Science student at the University of Waterloo. I had completed internships as a Software Engineer at Huawei and as an IT support specialist at Tangam Systems. I am currently seeking Fall 2023 opportunities!",
         // "I have a keen interest in the world of web development, and machine learning. My dream is to apply my knowledge and skills to make people's lives better!",
-        "During my free time, I also engage in..."
+        // "During my free time, I also engage in..."
     ]
     const hobbies = [
-        "🥋 Taekwondo",
-        "🎹 Play music",
-        "📷 Photography",
-        "🤔 Pondering life questions",
+        "🥋 taekwondo",
+        "🎹 playing music",
+        "📷 photography",
+        "🤔 pondering life",
         "..."
     ]
     const experienceList = [
@@ -61,7 +62,7 @@ const Home = () => {
         },
     ]
     return (
-        <div>
+        <div className="home flex flex-wrap justify-content-center w-12">
             <AboutSection aboutTexts={aboutTexts} hobbies={hobbies}/>
             <ExperienceSection experienceList={experienceList} />
             <ProjectSection projects={projects}/>

@@ -4,9 +4,13 @@ import { HashLink } from 'react-router-hash-link'
 
 const Navbar = (props) => {
     return (
-        <header>
+        <header className="flex flex-wrap justify-content-center py-3 nav">
             {props.texts.map((text, key) => {
-                return text === "home" || text === "gallery" ? <Link to={"/" + text} key={key}> {text} </Link> :  <HashLink to={"/#" + text} key={key}> {text} </HashLink>
+                return (
+                    <div key={key}>
+                        {text === "home" || text === "gallery" ? <Link to={"/" + text} className="flex mx-5"> {text} </Link> :  <HashLink className="flex mx-5" to={"/#" + text}> {text} </HashLink>}
+                    </div> 
+                )
             })}
         </header>
     )

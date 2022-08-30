@@ -7,7 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram'
 
 const ContactSection = () => {
   return (
-        <section id="contact">
+        <section id="contact" className="w-10 m-3 p-5 border-round-md">
             <SectionTitle text="Contact" />
             <h3>Let's get in touch!</h3>
             <EmailIcon />
