@@ -13,9 +13,9 @@ $lime1: #c6d1ab;
 $lime2: #bcd084;
 $lime3: #b8c059;
 
-$cyan: #7ed0de;
-$cyan1: #59b3bd;
-$cyan2: #17a3b0;
+$cyan1: #7ed0de;
+$cyan2: #59b3bd;
+$cyan3: #17a3b0;
 
 $blue1: #6c92aa;
 $blue2: #3280ae;
@@ -51,7 +51,7 @@ body {
 }
 
 .nav a:hover {
-    color: $cyan1 !important;
+    color: $cyan2 !important;
     font-weight: 600 !important;
 }
 
@@ -68,11 +68,23 @@ section h1 {
 }
 
 #projects h3 {
-    color: $lime3 !important;
+    color: $lime2 !important;
 }
 
 #contact h3 {
-    color: $cyan !important;
+    color: $white !important;
+}
+
+#emailIcon {
+    color: $gold2;
+}
+
+#githubIcon {
+    color: $lime3;
+}
+
+#linkedinIcon {
+    color: $cyan2;
 }
 
 .gallery {
