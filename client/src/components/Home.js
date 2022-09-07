@@ -38,12 +38,13 @@ const Home = () => {
     const projects = [
         {
             name: "Portfolio Website",
-            tags: ["React, JavaScript", "Sass"]
+            tags: ["React", "JavaScript", "Sass"],
+            description: "Website that contains information about me and showcases my work"
         },
         {
             name: "Photo Gallery",
             tags: ["React", "JavaScript", "CSS"],
-            description: "Web application that allows you to create a customized photo gallery",
+            description: "Web application that allows users to create a customized photo gallery",
         },
         {
             name: "Constructor Game",
@@ -58,7 +59,7 @@ const Home = () => {
         {
             name: "Perfect Tone (in progress)",
             tags: ["React", "JavaScript", "Socket.io", "MongoDB"],
-            description: "Web app for training your ear",
+            description: "Web application for training your ear",
         },
     ]
     return (

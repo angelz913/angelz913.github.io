@@ -64,11 +64,16 @@ section h1 {
 }
 
 #experience h3 {
-    color: $gold1 !important;
+    color: $gold2 !important;
 }
 
 #projects h3 {
     color: $lime2 !important;
+}
+
+#projects .ant-tag {
+    border-style: none;
+    background-color: rgba($cyan1, 0.6);
 }
 
 #contact h3 {
@@ -76,7 +81,7 @@ section h1 {
 }
 
 #emailIcon {
-    color: $gold2;
+    color: $gold1;
 }
 
 #githubIcon {
