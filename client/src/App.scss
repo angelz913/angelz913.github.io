@@ -73,7 +73,7 @@ section h1 {
 
 #projects .ant-tag {
     border-style: none;
-    background-color: rgba($cyan1, 0.6);
+    background-color: rgba($cyan1, 0.66);
 }
 
 #contact h3 {
@@ -97,8 +97,16 @@ section h1 {
 }
 
 .gallery h1 {
+    font-size: xx-large;
     font-weight: 500;
-    color: #fafafa;
+    color: #fcfcfc;
+    letter-spacing: .15em;
+}
+
+.gallery img:hover {
+    cursor: pointer;
+    opacity: .7;
+    transition: .25s ease;
 }
 
 .ant-divider {

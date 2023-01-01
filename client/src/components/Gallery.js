@@ -11,10 +11,9 @@ const Gallery = () => {
     }
     useEffect(() => {
         setImages(importAll(require.context('../assets/images/', false, /\.jpg$/)))
-        console.log(images)
     }, [])
      return (
-        <div className="gallery flex flex-wrap justify-content-cneter">
+        <div className="gallery flex flex-wrap justify-content-center">
             <GalleryHeader />
             <Divider />
             <ImageContainer images={images}/>

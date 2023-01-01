@@ -13,7 +13,7 @@ const Home = () => {
     ]
     const hobbies = [
         "🥋 taekwondo",
-        "🎹 playing music",
+        "🎹 playing the piano",
         "📷 photography",
         "🤔 pondering life",
         "..."
@@ -39,27 +39,27 @@ const Home = () => {
         {
             name: "Portfolio Website",
             tags: ["React", "JavaScript", "Sass"],
-            description: "Website that contains information about me and showcases my work"
+            description: "This is the website you're browsing right now"
         },
         {
             name: "Photo Gallery",
             tags: ["React", "JavaScript", "CSS"],
-            description: "Web application that allows users to create a customized photo gallery",
+            description: "A web application that allows users to create a customized gallery by uploading images; also supports features like filtering by tags and deleting images",
         },
         {
-            name: "Constructor Game",
+            name: "Constructor",
+            tags: ["Java", "SQL"],
+            description: "A command‑line application that allows users to learn about World Cups, developed with three other students"
+        },
+        {
+            name: "Constructor",
             tags: ["C++"],
-            description: "Multiplayer command line based game, developped with two other students as the final project for CS 246"
+            description: "A multiplayer command-line based game inspired by Catan, developed with two other students"
         },
         {
             name: "WLP4 Compiler",
             tags: ["C++"],
-            description: "Compiler that includes a scanner, a parser, a semantics checker and a MIPS assembly code generator for WLP4, a C-like language; CS 241 project"
-        },
-        {
-            name: "Perfect Tone (in progress)",
-            tags: ["React", "JavaScript", "Socket.io", "MongoDB"],
-            description: "Web application for training your ear",
+            description: "A compiler that contains a scanner, a parser, a semantics checker and a MIPS assembly code generator for WLP4, a programming language similar to C++"
         },
     ]
     return (
