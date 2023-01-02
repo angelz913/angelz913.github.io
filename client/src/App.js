@@ -6,10 +6,9 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Home from './components/Home'
 import Navbar from './components/Navbar'
 import Gallery from './components/Gallery'
-import Footer from './components/Footer'
 
 function App() {
-    const sectionTitles = ["home", "about", "experience", "projects", "contact", "gallery"]
+    const sectionTitles = ["home", "about", "experience", "projects", "gallery"]
     return (
         <>
             <Router>
@@ -19,7 +18,6 @@ function App() {
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
-                {/* <Footer /> */}
             </Router>
         </>  
     );

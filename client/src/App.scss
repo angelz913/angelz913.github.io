@@ -63,8 +63,13 @@ section h1 {
     color: $pink2 !important;
 }
 
+.home img {
+    height: 8rem;
+    border-radius: 50%;
+}
+
 #experience h3 {
-    color: $gold2 !important;
+    color: $gold1 !important;
 }
 
 #projects h3 {
@@ -76,8 +81,9 @@ section h1 {
     background-color: rgba($cyan1, 0.66);
 }
 
-#contact h3 {
-    color: $white !important;
+.contact a:hover {
+    opacity: .5;
+    transition: .25s;
 }
 
 #emailIcon {
@@ -85,11 +91,11 @@ section h1 {
 }
 
 #githubIcon {
-    color: $lime3;
+    color: $cyan2;
 }
 
 #linkedinIcon {
-    color: $cyan2;
+    color: $lime2;
 }
 
 .gallery {
@@ -99,16 +105,16 @@ section h1 {
 .gallery h1 {
     font-size: xx-large;
     font-weight: 500;
-    color: #fcfcfc;
-    letter-spacing: .15em;
+    color: #fcfcfc !important;
+    letter-spacing: .1em;
 }
 
 .gallery img:hover {
     cursor: pointer;
-    opacity: .7;
+    opacity: .25;
     transition: .25s ease;
 }
 
 .ant-divider {
-    background-color: rgba(#fff, 0.5);
+    background-color: rgba(#fff, 0.3);
 }
