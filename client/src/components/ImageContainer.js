@@ -20,9 +20,6 @@ const ImageContainer = (props) => {
     
     return (
         <div className="imgContainer sm:w-11 md:w-10 lg:w-9 xl:w-8 p-6">
-            {/* {props.images.map((image, key) => {
-            return <img src={image} alt="" key={key} style={{height:200, width:200, padding:10}}/>
-            })} */}
             <ImageList cols={3} gap={10} variant="masonry">
                 {props.images.map((image, key) => {
                     return ( 

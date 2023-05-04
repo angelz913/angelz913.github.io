@@ -8,7 +8,7 @@ import Navbar from './components/Navbar'
 import Gallery from './components/Gallery'
 
 function App() {
-    const sectionTitles = ["home", "about", "experience", "projects", "gallery"]
+    const sectionTitles = ["home", "about", "notes", "scores", "misc", "gallery"]
     return (
         <>
             <Router>

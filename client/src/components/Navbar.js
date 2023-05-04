@@ -8,7 +8,7 @@ const Navbar = (props) => {
             {props.texts.map((text, key) => {
                 return (
                     <div key={key}>
-                        {text === "home" || text === "gallery" ? 
+                        {text === "home" || text === "gallery" || text === "blog" ? 
                         <Link to={"/" + text} className="flex sm:mx-4 md:mx-5 lg:mx-6 xl:mx-7"> {text} 
                         </Link> : 
                         <HashLink className="flex sm:mx-4 md:mx-5 lg:mx-6 xl:mx-7" to={"/#" + text}> {text} </HashLink>}

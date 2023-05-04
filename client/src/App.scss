@@ -26,7 +26,7 @@ $blue5: #04040D;
 $purple1: #6e79a7;
 $purple2: #565481;
 
-$magenta: #ae5c99;
+$magenta: #c470af;
 
 $lineHeight: 1.75;
 
@@ -91,11 +91,15 @@ section h1 {
 }
 
 #githubIcon {
-    color: $cyan2;
+    color: $lime2;
 }
 
 #linkedinIcon {
-    color: $lime2;
+    color: $cyan2;
+}
+
+#instagramIcon {
+    color: $pink2;
 }
 
 .gallery {

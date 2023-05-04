@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { Divider } from 'antd'
-import GalleryHeader from './GalleryHeader'
+// import { Divider } from 'antd'
+// import GalleryHeader from './GalleryHeader'
 import ImageContainer from './ImageContainer'
 import Footer from './Footer'
 
@@ -16,7 +16,7 @@ const Gallery = () => {
      return (
         <section className="gallery">
             <div className="flex flex-wrap justify-content-center">
-                <GalleryHeader />
+                {/* <GalleryHeader /> */}
                 {/* <Divider /> */}
                 <ImageContainer images={images}/>
             </div>
