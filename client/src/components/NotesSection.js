@@ -60,7 +60,7 @@ const courses = [
 
 const Notes = () => {
     return (
-        <section id="notes" title="Notes" className="justify-content-center sm:w-10 md:w-9 lg:w-8 xl:w-7 mx-3 mt-5 mb-3 p-5 border-round-md">
+        <section id="notes" className="justify-content-center sm:w-10 md:w-9 lg:w-8 xl:w-7 mx-3 mt-5 mb-3 p-5 border-round-md">
             <SectionTitle text="Notes"/>
             <p>Notes I have created for my university courses (mostly math and CS courses).</p>
             {courses.map((course, key) => {

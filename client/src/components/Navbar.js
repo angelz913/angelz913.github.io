@@ -5,13 +5,12 @@ import { HashLink } from 'react-router-hash-link'
 const Navbar = (props) => {
     return (
         <header className="nav flex flex-wrap justify-content-center py-3">
-            {props.texts.map((text, key) => {
+            {props.titles.map((title, key) => {
                 return (
                     <div key={key}>
-                        {text === "home" || text === "gallery" || text === "blog" ? 
-                        <Link to={"/" + text} className="flex sm:mx-4 md:mx-5 lg:mx-6 xl:mx-7"> {text} 
-                        </Link> : 
-                        <HashLink className="flex sm:mx-4 md:mx-5 lg:mx-6 xl:mx-7" to={"/#" + text}> {text} </HashLink>}
+                        {title === "home" || title === "gallery" ? 
+                        <Link to={"/" + title} className="flex sm:mx-4 md:mx-5 lg:mx-6 xl:mx-7"> {title} </Link> : 
+                        <HashLink className="flex sm:mx-4 md:mx-5 lg:mx-6 xl:mx-7" to={"/#" + title}> {title} </HashLink>}
                     </div> 
                 )
             })}
