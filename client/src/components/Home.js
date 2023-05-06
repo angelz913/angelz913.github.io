@@ -61,7 +61,7 @@ const Home = () => {
             title: 'Title',
             dataIndex: 'title',
             key: 'title',
-            render: title => <Link to={"/article/" + title}> {title} </Link>
+            render: title => <Link to={"/articles/" + title}> {title} </Link>
         },
         {
             title: 'Date Posted',

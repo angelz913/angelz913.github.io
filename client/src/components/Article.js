@@ -49,7 +49,7 @@ const Article = () => {
     }
     return (
         <>
-            <Button icon={<ArrowLeftOutlined />}><Link to="/article">all articles</Link></Button>
+            <Button icon={<ArrowLeftOutlined />}><Link to="/articles">all articles</Link></Button>
             <article>
                 <h1>{articles[idx].title}</h1>
                 {articles[idx].contents.map((elem, key) => {

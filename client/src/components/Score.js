@@ -1,14 +1,14 @@
 import React from 'react'
 import { FilePdfFilled } from '@ant-design/icons'
+import PDF from '../assets/pdfs/Nuclear_Magnetic_Resonance.pdf'
 
 const Score = (props) => {
     return (
-        <div>
-            <img src="" alt="" />
+        <article>
             <h2>{props.title}</h2>
             <p>{props.desc}</p>
-            <a href="https://mui.com/material-ui/react-checkbox/"><FilePdfFilled /> Notes</a>
-        </div>
+            <a href={PDF} target="_blank"><FilePdfFilled /> Notes</a>
+        </article>
     )
 }
 

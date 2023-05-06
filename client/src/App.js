@@ -10,7 +10,7 @@ import Gallery from './components/Gallery'
 import Article from './components/Article'
 
 function App() {
-    const sectionTitles = ["home", "about", "notes", "scores", "article", "gallery"]
+    const sectionTitles = ["home", "about", "notes", "scores", "articles", "gallery"]
 
     return (
         <>
@@ -19,8 +19,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/gallery" element={<Gallery />} />
-                    <Route path="/article" element={<ArticleList />} />
-                    <Route path="/article/:title" element={<Article />} />
+                    <Route path="/articles" element={<ArticleList />} />
+                    <Route path="/articles/:title" element={<Article />} />
                     <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
             </Router>

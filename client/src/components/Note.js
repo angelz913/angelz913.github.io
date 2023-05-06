@@ -2,13 +2,16 @@ import React from 'react'
 import { FilePdfFilled } from '@ant-design/icons'
 
 const Note = (props) => {
+    const courseCode = props.name.split(' ')[0].toLowerCase() + props.name.split(' ')[1]
+    const pdf = require('../assets/pdfs/' + courseCode + '.pdf')
     return (
-        <div>
-            <img src="" alt="" />
+        <article>
             <h2>{props.name}</h2>
             <p>{props.desc}</p>
-            <a href="https://mui.com/material-ui/react-checkbox/"><FilePdfFilled /> Notes</a>
-        </div>
+            <a href={pdf}>
+                <FilePdfFilled /> Notes
+            </a>
+        </article>
     )
 }
 

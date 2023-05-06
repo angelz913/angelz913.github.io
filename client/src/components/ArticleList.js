@@ -37,7 +37,7 @@ const ArticleList = () => {
         <>
             {articles.map((article, key) => {
                 return (
-                    <Link to={'/article/' + article.title}>
+                    <Link to={'/articles/' + article.title}>
                         <section key={key}>
                             <h1>{article.title}</h1>
                             <h3>Posted on {article.datePosted} <span>Last updated on {article.lastUpdated} </span>
