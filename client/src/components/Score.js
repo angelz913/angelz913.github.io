@@ -1,13 +1,18 @@
 import React from 'react'
-import { FilePdfFilled } from '@ant-design/icons'
-import PDF from '../assets/pdfs/Nuclear_Magnetic_Resonance.pdf'
+import { FilePdfFilled, PlayCircleFilled } from '@ant-design/icons'
+
 
 const Score = (props) => {
+    const title = props.title.split(' ').join('_')
+    const pdf = require('../assets/pdfs/' + title + '.pdf')
+    const video = require('../assets/videos/' + title + '.mp4')
     return (
         <article>
             <h2>{props.title}</h2>
             <p>{props.desc}</p>
-            <a href={PDF} target="_blank"><FilePdfFilled /> Notes</a>
+            <a href={pdf} target='_blank'><FilePdfFilled /> Score</a>
+            <br />
+            <a href={video}><PlayCircleFilled /> Demo</a>
         </article>
     )
 }
