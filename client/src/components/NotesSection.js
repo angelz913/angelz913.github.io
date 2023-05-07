@@ -65,13 +65,31 @@ const courseTypes = ['CO', 'CS', 'ECON', 'MATH', 'STAT']
 const courseLevels = ['1XX', '2XX', '3XX', '4XX']
 
 const Notes = () => {
-    const [selectedCourseTypes,  setSelectedCourseTypes] = useState(courseTypes)
+    const [selectedCourseTypes, setSelectedCourseTypes] = useState(courseTypes)
     const [selectedCourseLevels, setSelectedCourseLevels] = useState(courseLevels)
-    const onChangeTypes = (checkedTypes) => {
+    const [checkAllTypes, setCheckAllTypes] = useState(true)
+    const [checkAllLevels, setCheckAllLevels] = useState(true)
+    const [indeterminateTypes, setIndeterminateTypes] = useState(false)
+    const [indeterminateLevels, setIndeterminateLevels] = useState(false)
+    const onChangeTypes = checkedTypes => {
         setSelectedCourseTypes(checkedTypes)
+        setCheckAllTypes(checkedTypes.length === courseTypes.length)
+        setIndeterminateTypes(0 < checkedTypes.length && checkedTypes.length < courseTypes.length)
     }
-    const onChangeLevels = (checkedLevels) => {
+    const onChangeLevels = checkedLevels => {
         setSelectedCourseLevels(checkedLevels)
+        setCheckAllLevels(checkedLevels.length === courseTypes.length)
+        setIndeterminateLevels(0 < checkedLevels.length && checkedLevels.length < courseLevels.length)
+    }
+    const onChangeCheckAllTypes = event => {
+        setSelectedCourseTypes(event.target.checked ? courseTypes : [])
+        setCheckAllTypes(event.target.checked)
+        setIndeterminateTypes(false)
+    }
+    const onChangeCheckAllLevels = event => {
+        setSelectedCourseLevels(event.target.checked ? courseLevels : [])
+        setCheckAllLevels(event.target.checked)
+        setIndeterminateLevels(false)
     }
     const filteredCourses = courses.filter(course => {
         let type = course.name.split(' ')[0]
@@ -83,9 +101,11 @@ const Notes = () => {
             <SectionTitle text='Notes'/>
             <p>Notes I have created for my university courses (mostly math and CS courses).</p>
             <h3>Course Type:</h3>
-            <Checkbox.Group options={courseTypes} defaultValue={courseTypes} onChange={onChangeTypes} />
+            <Checkbox.Group options={courseTypes} value={selectedCourseTypes} defaultValue={courseTypes} onChange={onChangeTypes} />
+            <Checkbox indeterminate={indeterminateTypes} onChange={onChangeCheckAllTypes} checked={checkAllTypes}>Select All</Checkbox>
             <h3>Course Level:</h3>
-            <Checkbox.Group options={courseLevels} defaultValue={courseLevels} onChange={onChangeLevels} />
+            <Checkbox.Group options={courseLevels} value={selectedCourseLevels} defaultValue={courseLevels} onChange={onChangeLevels} />
+            <Checkbox indeterminate={indeterminateLevels} onChange={onChangeCheckAllLevels} checked={checkAllLevels}>Select All</Checkbox>
             <div className='mt'></div>
             {filteredCourses.map((course, key) => {
                 return (
