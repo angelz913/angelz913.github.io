@@ -10,7 +10,7 @@ const Score = (props) => {
         <article>
             <h2>{props.title}</h2>
             <p>{props.desc}</p>
-            <a href={pdf} target='_blank'><FilePdfFilled /> Score</a>
+            <a href={pdf}><FilePdfFilled /> Score</a>
             <br />
             <a href={video}><PlayCircleFilled /> Demo</a>
         </article>
