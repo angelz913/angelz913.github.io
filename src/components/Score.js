@@ -6,7 +6,7 @@ import { Card } from 'antd'
 const Score = (props) => {
     const title = props.title.split(' ').join('_')
     const pdf = require('../assets/pdfs/' + title + '.pdf')
-    const video = require('../assets/videos/' + title + '.mp4')
+    // const video = require('../assets/videos/' + title + '.mp4')
     return (
         <Card
             title={props.title}
