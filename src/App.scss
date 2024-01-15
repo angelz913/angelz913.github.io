@@ -1,0 +1,202 @@
+$bodyFont: 'Segoe UI';
+
+$bkg: #152535;
+
+$color1: #416F85;
+
+$color2: #87B7C0;
+
+$color3: #FEC2C2;
+
+$color4: #FAE3E3;
+
+$color5: #D5486B;
+
+$white: #FAFAFA;
+ 
+$lineHeight: 1.75;
+
+body {
+    font-family: $bodyFont;
+    line-height: $lineHeight !important;
+    background-color: rgba($bkg, 1) !important;
+    color: $white !important;
+}
+
+.nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    color: $color2 !important;
+    font-weight: 600 !important;
+    transition: .25s ease;
+}
+
+.nav a:hover {
+    color: $color5 !important;
+    font-weight: 600 !important;
+}
+
+
+.home h1 {
+    color: $color3;
+}
+
+.home img {
+    height: 8rem;
+    border-radius: 50%;
+}
+
+#experience img {
+    height: 40px;
+    width: 40px;
+}
+
+#experience .vertical-timeline::before {
+    background-color: rgba(gray, 0.5);
+}
+
+#experience .vertical-timeline-element-icon {
+    // box-shadow: none;
+    box-shadow: 0 0 0 4px gray;
+}
+
+#experience .vertical-timeline-element-content {
+    background-color: rgba($white, 0.075);
+}
+
+#experience .vertical-timeline-element-content-arrow {
+    border-right-color: rgba($white, 0.075);
+}
+
+#experience h3 {
+    color: $color2;
+}
+
+#experience h4 {
+    color: $color4;
+}
+
+// notes 
+
+#notes .ant-card-body {
+    padding: 1.5rem;
+}
+
+#notes .ant-card:hover {
+    opacity: .75;
+    transition: 0.25s ease;
+}
+
+#notes .ant-card-meta-title h3 {
+    color: $color2;
+}
+
+#notes .ant-card-meta-title span {
+    color: gray;
+    font-weight: 300;
+}
+
+#notes .ant-card-meta-description {
+    color: $color4;
+}
+
+#notes .ant-checkbox::after {
+    border-color: $white;
+}
+
+#notes .ant-checkbox-input::after {
+    border-color: $white;
+}
+
+#notes .ant-checkbox-checked .ant-checkbox-inner {
+    border-color: $color5;
+    background-color: $color5;
+}
+
+#notes .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+    color: $color5;
+    background-color: $color5;
+}
+
+
+#notes span {
+    color: $white;
+}
+
+#notes .ant-card, 
+#scores .ant-card, 
+#articles .ant-card {
+    background-color: rgba($white, 0.075);
+    color: $white;
+    border: none;
+}
+
+#scores .ant-card-head-title, 
+#articles .ant-card-head-title {
+    color: $color2;
+}
+
+#scores .ant-card-head, 
+#articles .ant-card-head {
+    border-color: rgba($white, 0.2);
+    color: $color1;
+}
+
+#scores button {
+    color: $white; 
+    background-color: rgba($white, 0);
+}
+
+#scores button:hover {
+    color: $color5; 
+    border-color: $color5;
+}
+
+#articles .ant-card:hover {
+    opacity: 0.75;
+    transition: .25s ease;
+}
+
+#articles h1 {
+    color: $color2;
+}
+
+#articles h3 {
+    color: $color4;
+}
+
+.article article h1 {
+    color: $color4;
+}
+
+.contact a:hover {
+    opacity: 0.5;
+    transition: .25s ease;
+}
+
+#emailIcon {
+    color: $color1;
+}
+
+#githubIcon {
+    color: $color2;
+}
+
+#linkedinIcon {
+    color: $color3;
+}
+
+#instagramIcon {
+    color: $color4;
+}
+
+.gallery img:hover {
+    cursor: pointer;
+    opacity: 0.25;
+    transition: .25s ease;
+}
+
+.gallery, .nav {
+    background-color: #131313;
+}
