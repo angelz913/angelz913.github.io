@@ -1,5 +1,4 @@
 {
-  "name": "personal-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,8 +23,7 @@
     "react-scripts": "^5.0.1",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.54.5",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://angelz913.github.io"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
