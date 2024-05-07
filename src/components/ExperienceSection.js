@@ -2,12 +2,20 @@ import React from 'react'
 import SectionTitle from './SectionTitle'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css';
+import amdLogo from '../assets/logos/amd.jpg'
 import sidefxLogo from '../assets/logos/sidefx.jpg'
 import huaweiLogo from '../assets/logos/huawei.jpg'
 import tangamLogo from '../assets/logos/tangam.jpg'
 
 
 const experienceList = [
+    {
+        title: "AI Compiler Engineer",
+        company: "Advanced Micro Devices (AMD)",
+        date: "May. 2024 - Aug. 2024",
+        skills: [ "C++", "MLIR", "IREE" ],
+        logo: amdLogo
+    },
     {
         title: "CG Pipeline Software Developer",
         company: "SideFX Software",
@@ -35,7 +43,7 @@ const experienceList = [
         date: "Sep. 2021 - Dec. 2021",
         skills: [ "Angular", "TypeScript", "IT Support" ],
         logo: tangamLogo
-    }
+    },
 ]
 
 const ExperienceSection = (props) => {
