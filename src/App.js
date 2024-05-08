@@ -3,6 +3,7 @@ import 'antd/dist/antd.css'
 import '/node_modules/primeflex/primeflex.css'
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { Helmet } from "react-helmet";
 import Home from './components/Home'
 import Navbar from './components/Navbar'
 import NotesSection from './components/NotesSection'
@@ -16,6 +17,9 @@ function App() {
 
     return (
         <>
+            <Helmet>
+                <title>Angel Zhang</title>
+            </Helmet>
             <Router>
                 <Navbar titles={sectionTitles} />
                 <Routes>
