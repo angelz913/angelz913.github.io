@@ -11,7 +11,7 @@ const Gallery = () => {
         return r.keys().map(r)
     }
     useEffect(() => {
-        setImages(importAll(require.context('../assets/images/', false, /\.JPG$/)))
+        setImages( importAll(require.context('../assets/images/', false, /\.JPG$/)).reverse() )
     }, [])
      return (
         <section className="gallery">
