@@ -6,9 +6,8 @@ import pfp from '../assets/resource/pfp.png'
 
 
 const intros = [
-    "I am a fourth year Computer Science student at the University of Waterloo. \
-    I have previously interned at SideFX and Huawei, and I am currently seeking Summer 2024 internships!", 
-    "Please scroll down to find more information about me!"
+    "I am a fourth year CS student at the University of Waterloo, currently working at AMD as an AI compiler engineer intern. My journey also included internships at SideFX and Huawei.",
+    "I am passionate about exploring new opportunities and am open to Fall 2024 internships and 2025 new grad positions!" 
 ]
     
 
@@ -24,6 +23,7 @@ const AboutSection = (props) => {
                     </p>
                 )
             })}
+        <ContactSection></ContactSection>
         </section>
     )
 }

@@ -13,25 +13,25 @@ const experienceList = [
         title: "AI Compiler Engineer",
         company: "Advanced Micro Devices (AMD)",
         date: "May. 2024 - Aug. 2024",
-        skills: [ "C++", "MLIR", "IREE" ],
+        skills: [ "C++", "LLVM", "MLIR", "Torch", "ONNX" ],
         logo: amdLogo
     },
     {
         title: "CG Pipeline Software Developer",
         company: "SideFX Software",
         date: "Sept. 2023 - Dec. 2023",
-        skills: [ "C++", "Python" ],
+        skills: [ "C++", "Python",  ],
         logo: sidefxLogo
     },
     {
-        title: "Compiler Software Engineer",
+        title: "Compiler & Infrastructure Engineer",
         company: "Huawei Technologies Canada",
         date: "Jan. 2023 - Apr. 2023",
         skills: [ "C++", "Python", "Jenkins", "Shell Scripting" ],
         logo: huaweiLogo
     },
     {
-        title: "Compiler Software Engineer",
+        title: "Compiler Engineer",
         company: "Huawei Technologies Canada",
         date: "May. 2022 - Aug. 2022",
         skills: [ "C++", "Python", "LLVM", ],
@@ -48,7 +48,7 @@ const experienceList = [
 
 const ExperienceSection = (props) => {
     return (
-        <section id="experience" className="justify-content-center sm:w-10 md:w-9 lg:w-7 xl:w-6 m-5 border-round-md">
+        <section id="experience" className="justify-content-center sm:w-10 md:w-9 lg:w-7 xl:w-6 mb-5 border-round-md">
             <SectionTitle text="Experience"/>
             <VerticalTimeline layout="1-column-left" >
                 {experienceList.map((experience, key) => {
