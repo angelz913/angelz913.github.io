@@ -1,8 +1,5 @@
 import React from 'react'
 import { Card } from 'antd';
-import { Button } from 'antd';
-import { FilePdfOutlined } from '@ant-design/icons'
-// import example from '../assets/example.jpg'
 
 const { Meta } = Card;
 

@@ -13,7 +13,7 @@ const experienceList = [
         title: "AI Compiler Engineer",
         company: "Advanced Micro Devices (AMD)",
         date: "May. 2024 - Aug. 2024",
-        skills: [ "C++", "LLVM", "MLIR", "Torch", "ONNX" ],
+        skills: [ "C++", "MLIR", "Torch", "ONNX" ],
         logo: amdLogo
     },
     {
