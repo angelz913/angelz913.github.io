@@ -2,7 +2,7 @@ import React from 'react'
 import ContactSection from './ContactSection'
 import ProfilePicture from './ProfilePicture'
 import SectionTitle from './SectionTitle'
-import pfp from '../assets/resource/pfp.png'
+import pfp from '../assets/resource/pfp.jpg'
 
 
 const intros = [
