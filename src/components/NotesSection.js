@@ -9,6 +9,11 @@ import Note from "./Note"
 
 const courses = [
     {
+        name: "CS 450",
+        desc: "Computer Architecture",
+        type: "Review questions"
+    },
+    {
         name: "CS 456",
         desc: "Computer Networks",
         type: "Summary sheets + review questions"
