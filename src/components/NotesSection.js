@@ -14,6 +14,11 @@ const courses = [
         type: "Review questions"
     },
     {
+        name: "CS 486",
+        desc: "Introduction to Artificial Intelligence",
+        type: "Review questions"
+    },
+    {
         name: "CS 456",
         desc: "Computer Networks",
         type: "Summary sheets + review questions"
