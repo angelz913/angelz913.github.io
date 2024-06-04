@@ -23,11 +23,11 @@ const courses = [
         desc: "Computer Networks",
         type: "Summary sheets + review questions"
     },
-    // {
-    //     name: "CS 341",
-    //     desc: "Algorithms",
-    //     type: "Handwritten lecture notes + summary sheets",
-    // },
+    {
+        name: "CS 341",
+        desc: "Algorithms",
+        type: "Handwritten lecture notes",
+    },
     {
         name: "CS 350",
         desc: "Operating Systems",
