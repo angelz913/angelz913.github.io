@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer flex flex-column my-3">
       <p className="text-center text-xs">Angel Zhang © 2022-2024</p>
-      <p className="text-center text-xs">Last Updated: June 2024</p>
+      <p className="text-center text-xs">Last Updated: August 2024</p>
     </footer>
   )
 }

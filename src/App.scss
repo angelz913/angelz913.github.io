@@ -1,26 +1,18 @@
 $bodyFont: 'Segoe UI';
 
 $bkg: #152535;
-
 $color1: #416F85;
-
 $color2: #87B7C0;
-
 $color3: #FEC2C2;
-
 $color4: #FAE3E3;
-
 $color5: #D5486B;
-
-$white: #FAFAFA;
- 
-$lineHeight: 1.75;
+$text: #EEEEEE;
 
 body {
     font-family: $bodyFont;
-    line-height: $lineHeight !important;
+    line-height: 1.5 !important;
     background-color: rgba($bkg, 1) !important;
-    color: $white !important;
+    color: $text !important;
 }
 
 .nav a {
@@ -47,6 +39,10 @@ body {
     border-radius: 50%;
 }
 
+#about {
+    line-height: 1.75;
+}
+
 #experience img {
     height: 40px;
     width: 40px;
@@ -61,22 +57,29 @@ body {
 }
 
 #experience .vertical-timeline-element-content {
-    background-color: rgba($white, 0.075);
+    background-color: rgba($text, 0.075);
 }
 
 #experience .vertical-timeline-element-content-arrow {
-    border-right-color: rgba($white, 0.075);
+    border-right-color: rgba($text, 0.075);
 }
 
-#experience h3 {
+#experience h2 {
     color: $color2;
 }
 
-#experience h4 {
+#experience h3 {
     color: $color4;
 }
 
-// notes 
+#experience .ant-tag{
+    border-color: $color3;
+    color: $color3;
+    background-color: rgba($color3, 0.05);
+    letter-spacing: 1px;
+}
+
+// notes
 
 #notes .ant-card-body {
     padding: 1.5rem;
@@ -101,11 +104,11 @@ body {
 }
 
 #notes .ant-checkbox::after {
-    border-color: $white;
+    border-color: $text;
 }
 
 #notes .ant-checkbox-input::after {
-    border-color: $white;
+    border-color: $text;
 }
 
 #notes .ant-checkbox-checked .ant-checkbox-inner {
@@ -120,35 +123,35 @@ body {
 
 
 #notes span {
-    color: $white;
+    color: $text;
 }
 
-#notes .ant-card, 
-#scores .ant-card, 
+#notes .ant-card,
+#scores .ant-card,
 #articles .ant-card {
-    background-color: rgba($white, 0.075);
-    color: $white;
+    background-color: rgba($text, 0.075);
+    color: $text;
     border: none;
 }
 
-#scores .ant-card-head-title, 
+#scores .ant-card-head-title,
 #articles .ant-card-head-title {
     color: $color2;
 }
 
-#scores .ant-card-head, 
+#scores .ant-card-head,
 #articles .ant-card-head {
-    border-color: rgba($white, 0.2);
+    border-color: rgba($text, 0.2);
     color: $color1;
 }
 
 #scores button {
-    color: $white; 
-    background-color: rgba($white, 0);
+    color: $text;
+    background-color: rgba($text, 0);
 }
 
 #scores button:hover {
-    color: $color5; 
+    color: $color5;
     border-color: $color5;
 }
 
