@@ -83,17 +83,17 @@ const ExperienceSection = (props) => {
                             key={key}
                             icon={<img src={experience.logo}></img>}
                             date={experience.date} dateClassName="font-normal" >
-                            <h2 className="vertical-timeline-element-title">
+                            <h2 className="vertical-timeline-element-title text-lg">
                                 {experience.title}
                             </h2>
-                            <h3 className="vertical-timeline-element-subtitle">
+                            <h3 className="vertical-timeline-element-subtitle text-base">
                                 {experience.company}
                             </h3>
                             {experience.skills.map((skill, key) => {
-                                return <Tag className="mt-3 mr-2 p-1 text-sm font-normal">{skill}</Tag>
+                                return <Tag className="mt-3 mr-2 p-1 text-sm">{skill}</Tag>
                             })}
                             {experience.description.map((bullet, key) => {
-                                return <p className="font-normal text-sm">{" • " + bullet}</p>
+                                return <p className="my-2 font-normal text-sm">{" • " + bullet}</p>
                             })}
                         </VerticalTimelineElement>
                     )

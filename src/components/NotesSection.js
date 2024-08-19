@@ -53,7 +53,7 @@ const courses = [
         desc: "Logic and Computation",
         type: "Summary sheets of definitions and formula"
     },
-    { 
+    {
         name: "STAT 230",
         desc: "Probability",
         type: "Summary sheets of definitions and formula"
@@ -72,7 +72,7 @@ const courses = [
         name: "CS 135",
         desc: "Designing Functional Programs",
         type: "Notes for each module"
-    }, 
+    },
 ]
 
 const courseTypes = ["CO", "CS", "MATH", "STAT"]
@@ -110,7 +110,7 @@ const Notes = () => {
     const filteredCourses = courses.filter(course => {
         let type = course.name.split(" ")[0]
         let level = course.name.split(" ")[1][0] + "XX"
-        return selectedCourseTypes.includes(type) && 
+        return selectedCourseTypes.includes(type) &&
             selectedCourseLevels.includes(level)
     })
 
@@ -118,14 +118,14 @@ const Notes = () => {
         <section id="notes" className="justify-content-center sm:w-10 md:w-9 lg:w-7 xl:w-6 m-5 border-round-md">
             <SectionTitle text="Notes"/>
             <p className="text-base">Notes I have created for my university courses.</p>
-            <Checkbox.Group options={courseTypes} value={selectedCourseTypes} 
+            <Checkbox.Group options={courseTypes} value={selectedCourseTypes}
                 defaultValue={courseTypes} onChange={onChangeTypes} />
-            <Checkbox indeterminate={indeterminateTypes} onChange={onChangeCheckAllTypes} 
+            <Checkbox indeterminate={indeterminateTypes} onChange={onChangeCheckAllTypes}
                 checked={checkAllTypes} className="mb-2">Select All</Checkbox>
             <br></br>
-            <Checkbox.Group options={courseLevels} value={selectedCourseLevels} 
+            <Checkbox.Group options={courseLevels} value={selectedCourseLevels}
                 defaultValue={courseLevels} onChange={onChangeLevels} />
-            <Checkbox indeterminate={indeterminateLevels} onChange={onChangeCheckAllLevels} 
+            <Checkbox indeterminate={indeterminateLevels} onChange={onChangeCheckAllLevels}
                 checked={checkAllLevels}>Select All</Checkbox>
 
             <div id="notesContainer" className="flex flex-wrap justify-content-between mt-5">
@@ -135,7 +135,7 @@ const Notes = () => {
                     )
                 })}
             </div>
-            
+
         </section>
     )
 }

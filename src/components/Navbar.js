@@ -8,15 +8,15 @@ const Navbar = (props) => {
             {props.titles.map((title, key) => {
                 return (
                     <div key={key}>
-                        {title === "home" || title === "articles" || title === "gallery" ? 
-                        <Link to={"/" + title} 
-                            className="flex sm:mx-4 md:mx-5 lg:mx-6 xl:mx-7 text-base"> {title} 
-                        </Link> : 
-                        <HashLink 
-                            className="flex sm:mx-4 md:mx-5 lg:mx-6 xl:mx-7 text-base" 
-                            to={"/#" + title}> {title} 
+                        {title === "home" || title === "articles" || title === "gallery" ?
+                        <Link to={"/" + title}
+                            className="flex sm:mx-4 md:mx-5 lg:mx-6 xl:mx-7 text-base"> {title}
+                        </Link> :
+                        <HashLink
+                            className="flex sm:mx-4 md:mx-5 lg:mx-6 xl:mx-7 text-base"
+                            to={"/#" + title}> {title}
                         </HashLink>}
-                    </div> 
+                    </div>
                 )
             })}
         </header>

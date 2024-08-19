@@ -4,7 +4,6 @@ import ProfilePicture from './ProfilePicture'
 import SectionTitle from './SectionTitle'
 import pfp from '../assets/resource/pfp.jpg'
 
-
 const intros = [
     "I am a fourth year CS student at the University of Waterloo, \
     currently working at AMD as an AI compiler engineer intern. \
@@ -14,12 +13,11 @@ const intros = [
 
     "During my free time, I also enjoy taekwondo 🥋, \
     table tennis 🏓, photography 📷, playing the piano 🎹, \
-    and creating music arrangements 🎼. ",   
-    
+    and arranging music 🎼. ",
+
     "I am currently open to 2025 New Grad opportunities. \
     Please feel free to reach out!",
 ]
-    
 
 const AboutSection = (props) => {
     return (

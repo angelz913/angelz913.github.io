@@ -13,7 +13,7 @@ import Gallery from './components/Gallery'
 import Article from './components/Article'
 
 function App() {
-    const sectionTitles = ["home", "experience", "notes", "scores", "gallery"]
+    const sectionTitles = ["about", "experience", "notes", "blog", "scores", "gallery"]
 
     return (
         <>
@@ -32,7 +32,7 @@ function App() {
                     <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
             </Router>
-        </>  
+        </>
     );
 }
 

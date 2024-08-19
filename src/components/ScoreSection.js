@@ -23,7 +23,7 @@ const Scores = () => {
     return (
         <section id="scores" className="justify-content-center sm:w-10 md:w-9 lg:w-7 xl:w-6 m-5border-round-md">
             <SectionTitle text="Scores" />
-            <p className="text-base">Mostly piano arrangements for anime music. There are also some trio arrangements. </p>
+            <p className="text-base">Mostly piano arrangements.</p>
             {scores.map((score, key) => {
                 return (
                     <Score key={key} title={score.title} desc={score.desc} />
