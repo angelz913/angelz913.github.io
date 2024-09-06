@@ -6,6 +6,7 @@ import { Tag } from "antd";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css';
 
+import ReactMarkdown from 'react-markdown'
 
 import cerebrasLogo from '../assets/logos/cerebras.jpeg'
 import amdLogo from '../assets/logos/amd.jpg'
@@ -16,8 +17,8 @@ import tangamLogo from '../assets/logos/tangam.jpg'
 
 const experienceList = [
     {
-        title: "Incoming Kernel Engineer Intern",
-        company: "Cerebras Systems",
+        title: "Kernel Engineer Intern",
+        company: "Cerebras",
         date: "Sept. 2024 - Dec. 2024",
         skills: [],
         logo: cerebrasLogo,
@@ -25,42 +26,41 @@ const experienceList = [
     },
     {
         title: "AI Compiler Engineer Intern",
-        company: "Advanced Micro Devices (AMD)",
+        company: "AMD",
         date: "May. 2024 - Aug. 2024",
         skills: [ "C++", "MLIR",  "SPIR-V", "GLSL", "ONNX" ],
         logo: amdLogo,
-        description: ["Created a compiler pass in C++ for lowering MLIR to SPIR-V, enhancing upstream compilation processes for an intermediate language used in graphics and compute APIs such as OpenCL, OpenGL, and Vulkan.",
-            "Implemented SPIR-V dialect conversions and developed comprehensive tests using LLVM lit for multiple vector operations in MLIR, expanding the compiler support for parallel computation and GPU-based graphics.",
-            "Contributed to the open-source Torch-MILR compiler framework by addressing issues and enhancing the robustness for multiple ONNX and Torch operators." ]
+        description: [ "Developed a [compiler pass for lowering MLIR to SPIR-V](https://github.com/llvm/llvm-project/pull/95942)",
+            "Presented at [MLIR's Open Design Meeting](https://www.youtube.com/watch?v=-qoMMrlYvGs)"
+        ]
     },
     {
         title: "CG Pipeline Software Developer Intern",
-        company: "SideFX Software",
+        company: "SideFX",
         date: "Sept. 2023 - Dec. 2023",
-        skills: [ "C++", "Python"  ],
+        skills: [ "C++", "Python" ],
         logo: sidefxLogo,
-        description: ["Leveraged multithreading in C++ to optimize data retrieval methods in Houdini Engine, resulting in a 67% reduction in client-server data transfer costs and enhancing overall efficiency.",
-            "Expanded the functionality of Houdini's Task Operator by developing new features in Python, providing users with more flexible options for generating streamlined CG workflows.",
-            "Identified and resolved a memory issue in Houdini Engine by modifying a code generation script containing incompatible data types, reducing memory usage by 50%." ]
+        description: [ "Worked on [Houdini Engine](https://www.sidefx.com/products/houdini-engine/)",
+            "Developed new features for [Houdini's PDGs (Procedural Dependency Graph)](https://www.sidefx.com/products/houdini/pdg/)"
+         ]
     },
     {
-        title: "Compiler Engineer Intern",
-        company: "Huawei Technologies Canada",
-        date: "Jan. 2023 - Apr. 2023",
+        title: "Compiler & Infrastructure Engineer Intern",
+        company: "Huawei Canada",
+        date: "May. 2022 - Aug. 2022 & Jan. 2023 - Apr. 2023",
         skills: [ "C++", "Python", "Jenkins", "Shell Scripting" ],
         logo: huaweiLogo,
-        description: ["Streamlined compiler tuning processes and facilitated the exploration of optimization opportunities in multiple benchmarks using Python and Shell scripts.",
-            "Implemented a CI workflow using Jenkins for major development branches to ensure a seamless merging process with the main branch.",
-            "Identified and fixed bugs in existing C++ code, resolving memory usage issues caused by defunct processes." ]
+        description: [ "Streamlined compiler tuning processes and facilitated the exploration of optimization opportunities in multiple benchmarks using Python and Shell scripts" ]
     },
     {
         title: "Compiler Engineer Intern",
-        company: "Huawei Technologies Canada",
-        date: "May. 2022 - Aug. 2022",
-        skills: [ "C++", "Python", "LLVM" ],
+        company: "Huawei Canada",
+        date: "May. 2022 - Aug. 2022 & Jan. 2023 - Apr. 2023",
+        skills: [ "C++", "Python", "Jenkins", "Shell Scripting" ],
         logo: huaweiLogo,
-        description: ["Developed an interface in C++ and Python to connect LLVM with a machine learning framework, enabling seamless interaction between the two parties.",
-            "Refactored and optimized existing Python scripts, leading to a 93% reduction in the compilation time of various benchmarks when the ML-enabled compiler is used." ]
+        description: [
+            "Developed an interface that connects LLVM infrastructure with an ML framework",
+            "Co-authored paper [ACPO: AI-Enabled Compiler-Driven Program Optimization](https://arxiv.org/abs/2312.09982)" ]
     },
     {
         title: "IT Support Intern",
@@ -68,11 +68,11 @@ const experienceList = [
         date: "Sep. 2021 - Dec. 2021",
         skills: [ "Angular", "TypeScript", "IT Support" ],
         logo: tangamLogo,
-        description: ["Designed and developed a full-stack web application using Angular, TypeScript, Sass, and Node.js from scratch, serving as the company's new IT support request platform."]
+        description: [ "Designed and developed a full-stack web application using Angular, TypeScript, Sass, and Node.js from scratch, serving as the company's new IT support request platform."]
     },
 ]
 
-const ExperienceSection = (props) => {
+const ExperienceSection = () => {
     return (
         <section id="experience" className="justify-content-center sm:w-10 md:w-9 lg:w-7 xl:w-6 mb-5 border-round-md">
             <SectionTitle text="Experience"/>
@@ -90,10 +90,10 @@ const ExperienceSection = (props) => {
                                 {experience.company}
                             </h3>
                             {experience.skills.map((skill, key) => {
-                                return <Tag className="mt-3 mr-2 p-1 text-sm">{skill}</Tag>
+                                return <Tag className="mt-3 mr-2 p-1 text-sm" key={key}>{skill}</Tag>
                             })}
                             {experience.description.map((bullet, key) => {
-                                return <p className="my-2 font-normal text-sm">{" • " + bullet}</p>
+                                return <ReactMarkdown key={key} >{" • " + bullet}</ReactMarkdown>
                             })}
                         </VerticalTimelineElement>
                     )

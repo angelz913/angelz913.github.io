@@ -5,11 +5,11 @@ import SectionTitle from './SectionTitle'
 import pfp from '../assets/resource/pfp.jpg'
 
 const intros = [
-    "I am a fourth year CS student at the University of Waterloo, \
-    currently working at AMD as an AI compiler engineer intern. \
-    Previously, I have interned at SideFX and Huawei as SWE. \
+    "I am a senior Computer Science student at the University of Waterloo, \
+    currently working at Cerebras Systems as a kernel engineer intern. \
+    Previously, I have interned at AMD, SideFX and Huawei as SWE. \
     My interest lies in compiler development and computer architecture, \
-    but I am also passionate about learning new technologies. ",
+    but I am also passionate about learning other technologies. ",
 
     "During my free time, I also enjoy taekwondo 🥋, \
     table tennis 🏓, photography 📷, playing the piano 🎹, \
