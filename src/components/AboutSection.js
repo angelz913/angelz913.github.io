@@ -4,10 +4,13 @@ import ProfilePicture from './ProfilePicture'
 import SectionTitle from './SectionTitle'
 import pfp from '../assets/resource/pfp.jpg'
 
+import ReactMarkdown from 'react-markdown'
+
 const intros = [
     "I am a senior Computer Science student at the University of Waterloo, \
-    currently working at Cerebras Systems as a kernel engineer intern. \
-    Previously, I have interned at AMD, SideFX and Huawei as SWE. \
+    currently interning at [Cerebras](https://cerebras.ai/) as a kernel engineer. \
+    Previously, I have interned at [AMD](https://www.amd.com/en.html), \
+    [SideFX](https://www.sidefx.com/) and [Huawei](https://www.huawei.com/ca/) as SWE. \
     My interest lies in compiler development and computer architecture, \
     but I am also passionate about learning other technologies. ",
 
@@ -26,9 +29,9 @@ const AboutSection = (props) => {
             <SectionTitle text="👋 Nice to meet you! I am Angel Zhang." className="text-center" />
             {intros.map((intro, key) => {
                 return (
-                    <p key={key} className="text-lg">
+                    <ReactMarkdown key={key} className="text-lg">
                         {intro}
-                    </p>
+                    </ReactMarkdown>
                 )
             })}
         <ContactSection></ContactSection>

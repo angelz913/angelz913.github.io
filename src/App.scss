@@ -21,7 +21,7 @@ body {
     letter-spacing: .25em;
     color: $color2 !important;
     font-weight: 600 !important;
-    transition: .25s ease;
+    transition: 0.25s ease;
 }
 
 .nav a:hover {
@@ -40,6 +40,17 @@ body {
 
 #about {
     line-height: 1.75;
+}
+
+#about p a {
+    background-color: $color1;
+    color: $text;
+    font-weight: 500;
+}
+
+#about p a:hover {
+    background-color: $color5;
+    transition: 0.25s ease;
 }
 
 #experience img {
@@ -175,7 +186,7 @@ body {
 
 #articles .ant-card:hover {
     opacity: 0.75;
-    transition: .25s ease;
+    transition: 0.25s ease;
 }
 
 #articles h1 {
@@ -192,7 +203,7 @@ body {
 
 .contact a:hover {
     opacity: 0.5;
-    transition: .25s ease;
+    transition: 0.25s ease;
 }
 
 #emailIcon {
@@ -214,7 +225,7 @@ body {
 .gallery img:hover {
     cursor: pointer;
     opacity: 0.25;
-    transition: .25s ease;
+    transition: 0.25s ease;
 }
 
 .gallery, .nav {
