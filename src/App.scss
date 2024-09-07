@@ -29,7 +29,6 @@ body {
     font-weight: 600 !important;
 }
 
-
 .home h1 {
     color: $color3;
 }
@@ -69,17 +68,36 @@ body {
 }
 
 #experience h3 {
-    color: $color4;
+    color: $color5;
 }
 
 #experience .ant-tag{
-    border-color: $color3;
-    color: $color3;
-    background-color: rgba($color3, 0.05);
+    border-color: $color4;
+    color: $color4;
+    background-color: rgba($color4, 0.05);
     letter-spacing: 1px;
 }
 
+#experience p {
+    color: $text;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#experience a {
+    color: $color3;
+}
+
+#experience a:hover {
+    opacity: 0.75;
+    transition: 0.25s ease;
+}
+
 // notes
+
+#notes span {
+    color: $text;
+}
 
 #notes .ant-card-body {
     padding: 1.5rem;
@@ -121,9 +139,9 @@ body {
     background-color: $color5;
 }
 
-
-#notes span {
-    color: $text;
+#notes .ant-card-meta-description,
+#scores p {
+    font-size: 0.95rem;
 }
 
 #notes .ant-card,
