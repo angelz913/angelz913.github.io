@@ -13,7 +13,7 @@ import Gallery from './components/Gallery'
 import Article from './components/Article'
 
 function App() {
-    const sectionTitles = ["about", "experience", "notes", "blog", "scores", "gallery"]
+    const sectionTitles = ["about", "experience", "notes", "blog", "gallery"]
 
     return (
         <>
@@ -25,7 +25,6 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/notes" element={<NotesSection />} />
-                    <Route path="/scores" element={<ScoresSection />} />
                     <Route path="/gallery" element={<Gallery />} />
                     {/* <Route path="/articles" element={<ArticleList />} />
                     <Route path="/articles/:title" element={<Article />} /> */}
