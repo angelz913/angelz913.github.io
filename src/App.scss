@@ -79,7 +79,7 @@ body {
 }
 
 #experience h3 {
-    color: $color5;
+    color: $color4;
 }
 
 #experience .ant-tag{
@@ -100,8 +100,7 @@ body {
 }
 
 #experience a:hover {
-    opacity: 0.75;
-    transition: 0.25s ease;
+    color: $color5;
 }
 
 // notes
